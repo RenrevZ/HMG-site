@@ -1,0 +1,111 @@
+@import url('/css/main.css');
+@import url('/css/features.css');
+
+.why-us-area{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0px;
+}
+
+.why-us-area .why-us-container{
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+}
+
+
+
+.why-us-area .why-us-container .why-us-image img{
+    width: 100%;
+}
+.why-us-area .why-us-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.why-us-area .why-us-text p{
+    color: var( --paragraph-color);
+    width: 80%;
+}
+
+/* ======== Project Team ======== */
+.project-team-area{
+    width: 100vw;
+    background: url('/img/pexels-polina-zimmerman-3747462.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 500px;
+    margin-bottom: 80px;
+}
+
+.project-team-area .project-team-overlay{
+    background-color: rgba(181,101,29,0.5);
+    height: 100%;
+}
+
+.project-team-overlay .project-team-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    max-width: 900px;
+    margin: auto;
+}
+.project-team-overlay .project-team-container h1{
+    font-weight: bold;
+}
+/* =========== Team Picture Gallery ========== */
+.team-picture-gallery .team-picture-container{
+    padding: 0px 50px;
+}
+
+.team-picture-container .team-picture-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0px;
+    opacity: 0.8;
+}
+
+/* =========== founder-area ======== */
+.learn-card{
+    margin-top: 50px;
+}
+
+.card .card-body .card-icon img{
+    border-radius: 50%;
+    margin-bottom: 30px;
+}
+
+.card .card-body .card-text p{
+    text-align: left;
+}
+
+.card .card-body .card-bottom{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    border-top: 1px solid rgba(0,0,0,0.2);
+    width: 70%;
+}
+
+.card .card-body .card-bottom small{
+    color: var(--paragraph-color);
+}
+
+/* ======== Media Queries ======= */
+
+
+@media(max-width:500px){
+    .why-us-area .why-us-container{
+        display: block;
+    }
+    
+    
+}
+
